@@ -1,0 +1,67 @@
+body {
+	background-color: #555b6e;
+	margin: auto;
+}
+h1 {
+	font-size: 78px;
+	color: #faf9f9;
+	font-family: "Courier";
+}	
+.card {
+	width: 280px;
+	margin: 0 auto;
+}	
+.dws {
+	display: flex;
+	justify-content: center;
+	color: #a4cac5;
+}	
+button {
+	background-color: #fde8da;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: auto;
+    color: #a4cac5;
+}	
+.butt{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 30px;
+	border: 3px;
+	width: 150px;
+	height: 30px;
+	display: block;
+	text-align: center;
+	font-family: "Courier";
+	font-weight: bold;
+	color: #3d5361;
+	top: -100px;
+}	
+li {
+  display: inline-block;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
